@@ -17,6 +17,10 @@ main{
 .top-banner{
     display: flex;
     background-color: blue;
+    transition: background-color 3.5s ease;
+}
+.top-banner:hover{
+    background-color: purple;
 }
 .banner-info{
     margin-left: 156px;
@@ -28,11 +32,20 @@ main{
     font-size: 64px;
     color: white;
 }
+#banner-title:hover{
+    transform: scalex(-1.5) rotatey(180deg);
+    transition: transform 3s ease-in-out 0.5s;
+}
+
 .banner-info a{
     color: white;
+    transition: background-color 3.5s ease;
     text-decoration: none;
     background-color: #E02C6D;
     padding: 10px 24px 10px 24px;
+}
+.banner-info a:hover{
+    background-color: rgb(78, 25, 34);
 }
 .fa-arrow-right{
     margin: 0 8px;
@@ -43,6 +56,10 @@ main{
 .banner-img img{
     width: 556.01px;
     height: 438px;
+}
+.banner-img:hover img{
+    transform: rotate(360deg) scale(1.4);
+    transition: transform 3s ease-in-out 0.5s;
 }
 
 /* players style */
@@ -117,12 +134,20 @@ footer{
     #banner-title{
         width: 278px;
     }
+    #banner-title:hover{
+        transform: scalex(-1.1) rotatey(180deg);
+        transition: transform 3s ease-in-out 0.5s;
+    }
     .banner-img{
         margin: 50px 15px;
     }
     .banner-img img{
         width: 329px;
         height: 259.17px;
+    }
+    .banner-img:hover img{
+        transform: rotate(360deg);
+        transition: transform 3s ease-in-out 0.5s;
     }
 
     /* for players */
