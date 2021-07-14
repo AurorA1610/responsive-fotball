@@ -1,0 +1,73 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common styles or utilities*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* top-banner style */
+.top-banner{
+    display: flex;
+    background-color: blue;
+}
+.banner-info{
+    margin-left: 156px;
+    margin-top: 207px;
+}
+#banner-title{
+    width: 485px;
+    font-size: 64px;
+    color: white;
+}
+.banner-info a{
+    color: white;
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px 10px 24px;
+    margin-top: 27px;
+}
+.fa-arrow-right{
+    margin: 0 8px;
+}
+.banner-img{
+    margin: 150px 140px 86px 102px;
+}
+.banner-img img{
+    width: 556.01px;
+    height: 438px;
+}
+
+
+/* media query */
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px){
+    .banner-container{
+        width: 100%;
+    }
+    .top-banner{
+        flex-direction: column;
+    }
+    .banner-info{
+        margin: 15px;
+        margin-top: 112px;
+    }
+    #banner-title{
+        width: 278px;
+    }
+    .banner-img{
+        margin: 50px 15px;
+    }
+    .banner-img img{
+        width: 329px;
+        height: 259.17px;
+    }
+}
