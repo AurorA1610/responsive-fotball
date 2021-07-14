@@ -4,7 +4,6 @@
 /* common styles or utilities*/
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #F3F1FF;
 }
 main{
     display: flex;
@@ -21,6 +20,7 @@ main{
 .banner-info{
     margin-left: 156px;
     margin-top: 207px;
+    margin-bottom: 169px;
 }
 #banner-title{
     width: 485px;
@@ -32,7 +32,6 @@ main{
     text-decoration: none;
     background-color: #E02C6D;
     padding: 10px 24px 10px 24px;
-    margin-top: 27px;
 }
 .fa-arrow-right{
     margin: 0 8px;
@@ -45,12 +44,41 @@ main{
     height: 438px;
 }
 
+/* players style */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 70px 180px;
+}
+.player{
+    width: 330px;
+    height: 480px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    padding-bottom: 33px;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player-name{
+    font-size: 28px;
+}
+.player-details{
+    color: gray;
+}
+
+
 
 /* media query */
 
 /* Mobile Devices */
 @media only screen and (max-width: 688px){
-    .banner-container{
+
+    /* for top banner */
+    .container{
         width: 100%;
     }
     .top-banner{
@@ -69,5 +97,12 @@ main{
     .banner-img img{
         width: 329px;
         height: 259.17px;
+    }
+
+    /* for players */
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 15px;
+        margin-top: 47px;
     }
 }
